@@ -1,28 +1,27 @@
 location,state,email
-Lincoln,Illinois,nws.lincoln@noaa.gov
-Indianapolis,Indiana,nws.indianapolis@noaa.gov
-North Webster,Indiana,nws.northernindiana@noaa.gov
-Davenport,Iowa,cr.dvnstudents@noaa.gov
-Des Moines,Iowa,nws.desmoines@noaa.gov
-Jackson,Kentucky,w-jkl.webmaster@noaa.gov
-Louisville,Kentucky,nws.louisville@noaa.gov
-Paducah,Kentucky,nws.paducah@noaa.gov
-Detroit,w-dtx.webmaster@noaa.gov
-Gaylord,Michigan,w-apx.webmaster@noaa.gov
-Grand Rapids,Michigan,nws.grandrapids@noaa.gov
-Duluth,Minnesota,nws.duluth@noaa.gov
-Twin Cities WFO,Minnesota,nws.twincities@noaa.gov
-Twin Cities NCRFC,Minnesota,w-ncrfc.webmaster@noaa.gov
-Kansas City WFO,Missouri,nws.kansascity@noaa.gov
-Kansas City MBRFC,Missouri,w-mbrfc.webmaster@noaa.gov
-Springfield,Missouri,nws.springfield@noaa.gov
-St. Louis,Missouri,nws.stlouis@noaa.gov
-Bismarck,North Dakota,w-bis.webmaster@noaa.gov
-Grand Forks,North Dakota,nws.grandforks@noaa.gov
-Aberdeen,South Dakota,w-abr.webmaster@noaa.gov
-Sioux Falls,South Dakota,w-fsd.webmaster@noaa.gov
-Green Bay,Wisconsin,nws.greenbay@noaa.gov
-La Crosse,Wisconsin,nws.lacrosse@noaa.gov
-Milwaukee,Wisconsin,nws.milwaukee@noaa.gov
-Cheyenne,Wyoming,w-cys.webmaster@noaa.gov
-Riverton,Wyoming,nws.riverton@noaa.gov
+Portland,Maine,gyx.webmaster@noaa.gov
+Caribou,Maine,carwebmaster@noaa.gov
+Boston,Massachusetts,box.webmaster@noaa.gov
+Northeast River,Massachusetts,nerfc.operations@noaa.gov
+Nashua,New Hampshire,zbw.operations@noaa.gov
+Mount Holly,New Jersey,wfophi.webmaster@noaa.gov
+Albany,New York,alywebmaster@noaa.gov
+Binghamton,New York,bgm.webmaster@noaa.gov
+Buffalo,New York,buf.webmaster@noaa.gov
+New York City,New York,okx.webmaster@noaa.gov
+Newport,North Carolina,wxobs.mhx@noaa.gov
+Raleigh,North Carolina,rah.webmaster@noaa.gov
+Wilmington,North Carolina,ilm.webmaster@noaa.gov
+Cleveland,Ohio,nwscle@noaa.gov
+Wilmington,Ohio,iln.webmaster@noaa.gov
+Pittsburgh,Pennsylvania,nws.pittsburgh@noaa.gov
+State College,Pennsylvania,ctpwebmaster@noaa.gov
+Middle Atlantic River,Pennsylvania,marfc.webmaster@noaa.gov
+Charleston,South Carolina,nws.charlestonsc@noaa.gov
+Columbia,South Carolina,NWS.Columbia@noaa.gov
+Greenville-Spartanburg,South Carolina,gsp.webmaster@noaa.gov
+Burlington,Vermont,btv.webmaster@noaa.gov
+Blacksburg,Virginia,rnk.webmaster@noaa.gov
+Sterling,Virginia,lwxwebmaster@noaa.gov
+Wakefield,Virginia,akq.webmaster@noaa.gov
+Charleston,West Virginia,rlx.webmaster@noaa.gov
