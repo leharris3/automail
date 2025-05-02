@@ -1,0 +1,13 @@
+Dear NWS {location} Team,
+
+My name is Levi. I am a first-year Computer Science Master's student at the University of North Carolina at Chapel Hill. Over the past two years, I have worked as a machine learning researcher, with active and pending publications in applied computer vision and audio generation. Beyond my research, I also have experience as a corporate software engineer and data analyst.
+
+Meteorology and climate modeling are long-standing personal interests of mine, though, until this point, I had not identified clear opportunities to merge these passions with my machine learning and programming background.
+
+This summer, I would greatly appreciate the opportunity to volunteer at the NWS in {location}, {state}, in any small way that I can. I am particularly interested in working tasks related to data collection and analysis; however, I am open to helping in any way I can.
+
+Please let me know if volunteering this summer is a possibility. Thank you for your consideration – I look forward to your reply.
+
+Levi Harris
+M.S. Computer Science | UNC Chapel Hill
+[LinkedIn](https://www.linkedin.com/in/levi-harris-cs/) | [Website](https://leharris3.github.io/)
