@@ -1,9 +1,9 @@
+import os
+import sys
+import csv
 import argparse
 import base64
-import csv
-import os
 import pathlib
-import sys
 import markdown2
 import mimetypes
 from pathlib import Path
@@ -38,9 +38,10 @@ def _attach_files(msg: EmailMessage, paths: list[str], row: dict):
         )
 
 
-# ────────────────────────────────────────────────────────────── auth
 def get_service():
-    """Return an authenticated Gmail service resource."""
+    """
+    Return an authenticated Gmail service resource.
+    """
     creds = None
     if os.path.exists(TOKEN_PATH):
         creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
@@ -57,7 +58,6 @@ def get_service():
     return build("gmail", "v1", credentials=creds)
 
 
-# ─────────────────────────────────────────────────────── helpers
 def create_message(
     row: dict,
     subject_fmt: str,
@@ -65,14 +65,15 @@ def create_message(
     sender: str,
     attachments=None,
 ) -> dict:
-    """Create a MIME e‑mail and wrap it for the Gmail API."""
+    """
+    Create a MIME e‑mail and wrap it for the Gmail API.
+    """
+
     md_filled = body_template.format(**row)
 
-    # ── 2.  generate plain‑text & html
-    plain_body = md_filled  # keep Markdown as readable plain‑text
+    plain_body = md_filled
     html_body = markdown2.markdown(md_filled)  # converts to <p>, <strong>, <em>, links…
 
-    # ── 3.  craft the message
     msg = EmailMessage()
     msg["To"] = row["email"]
     msg["From"] = sender
@@ -85,17 +86,17 @@ def create_message(
     if attachments:
         _attach_files(msg, attachments, row)
 
-    # ── 4.  wrap for Gmail API
     encoded = base64.urlsafe_b64encode(msg.as_bytes()).decode("utf-8")
     return {"raw": encoded}
 
 
 def send_message(service, message):
-    """Send one message with the Gmail API."""
+    """
+    Send one message with the Gmail API.
+    """
     return service.users().messages().send(userId="me", body=message).execute()
 
 
-# ──────────────────────────────────────────────────────────── cli
 def main():
     ap = argparse.ArgumentParser(description="Simple Gmail mail‑merge CLI")
     ap.add_argument("--csv", required=True, type=pathlib.Path)
@@ -121,7 +122,7 @@ def main():
 
     service = None if args.dry_run else get_service()
 
-    for i, row in enumerate(rows, 1):
+    for i, row in enumerate(rows, start=1):
         try:
             message = message = create_message(
                 row,
@@ -139,9 +140,6 @@ def main():
             print(f"‼️  Error sending to {row['email']}: {e}")
         except KeyError as e:
             print(f"‼️  Missing column {e} in CSV; skipping {row.get('email')}")
-        # Gmail’s per‑second user quota is tight (250 QP / s); one send = 100 QP.
-        # Small merges usually don’t need a sleep, but if you hit 403 rate limits,
-        # add    time.sleep(1)
 
 
 if __name__ == "__main__":
